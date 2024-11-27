@@ -1,0 +1,125 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    background-color: #FBF4DB;
+    font-family: "quicksand", serif;;
+  }
+ 
+ h1, h2, h3 {
+    color: #E07B39;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  /*Estilos Condicion n°1*/
+  .img_principal {
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .img_uno {
+    width: 400px;
+    height: auto;
+    cursor: pointer;
+  }
+
+  /*Estilos Condicion n°2*/
+  .sticker_p {
+    text-align: center;
+  }
+
+  .cont_stickers {
+      display: flex; 
+      gap: 30px;
+      justify-content: center;
+    }
+
+  .sticker {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 120px; 
+    padding: 10px; 
+    background-color: #B6A28E;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+
+
+  .img_sticker {
+      width: 100px;
+      height: auto; 
+      margin-bottom: 10px;
+    }
+
+
+  .sticker input {
+      width: 90%; 
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      font-size: 14px;
+      text-align: center; 
+    }
+
+  .btn_sticker {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+  .btn_sticker > button {
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #B6A28E;
+      border: none;
+      border-radius: 5px;
+      color: white;
+    }
+
+  .btn:hover {
+      color: black;
+    }
+
+  .btn {
+    cursor: pointer;
+  }
+
+  /*Estilos Condicion n°3*/
+  .clave_p {
+  text-align: center;
+  }
+
+  .clave_select {
+    display: flex;
+    justify-content: center;
+  }
+
+  .select-number{
+    cursor: pointer;
+  }
+
+  .btn_select {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .resultado-password {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
