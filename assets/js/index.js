@@ -12,6 +12,7 @@ imgPrincipal.addEventListener('click', () => {
 //Condicion n°2 
 const inputsStickers = document.querySelectorAll('.cont_stickers input');
 const verificarBtn = document.querySelector('.btn_sticker button');
+const mensajeStickers = document.querySelector('.mensaje_stickers');
 
 verificarBtn.addEventListener('click', () => {
     let totalStickers = 0;
@@ -22,11 +23,14 @@ verificarBtn.addEventListener('click', () => {
     });
 
     if (totalStickers <= 10) {
-        alert(`Llevas ${totalStickers} stickers.`);
+        mensajeStickers.textContent = `Llevas ${totalStickers} stickers.`;
+        mensajeStickers.style.color = 'green'; 
     } else {
-        alert('Llevas demasiados stickers.');
+        mensajeStickers.textContent = 'Llevas demasiados stickers.';
+        mensajeStickers.style.color = 'red';
     }
 });
+
 
 //Condicion n°3 
 const selectElements = document.querySelectorAll('.select-number');
